@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+
+#menu {
+    background: #357d93;
+    border-right: none;
+}
+#menu ul {
+	overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+#menu ul li {
+	font-family: 'Julius Sans One', sans-serif;
+	list-style: none;
+	font-size: 1.5em;
+	color: #FFF;
+	width: 130px;
+	float: left;
+	line-height: normal;
+}
+#menu ul li a {
+	color: inherit;
+}
+
+#hinesLogo {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 2.4em;
+	font-weight: bold;
+	background: #357d93;
+	border-right: none;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	color: #FFF;
+}
+#footer {
+	font-family: 'Julius Sans One', sans-serif;
+	background: #357d93;
+	text-align: center;
+	font-size: 1em;
+	color: #FFF;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 80%;
+      margin: auto;
+}
+
+#researchDesc p {
+	font-family: "Libre Baskerville", serif;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+#researchDesc a {
+	font-family: "Libre Baskerville", serif;
+	font-size: 1em;
+	line-height: 1.4em;
+	text-decoration: underline;
+}
+#researchDesc ul {
+	font-family: "Libre Baskerville", serif;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+#researchDesc h2 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 1.7em;
+	color: #357d93;
+}
+
+#calvinDesc p {
+	font-family: "Libre Baskerville", serif;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+#calvinDesc p.head {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 6.0em;
+	font-weight: bold;
+	line-height: 1.4em;
+	color: #357d93;
+}
+#calvinDesc a {
+	font-family: "Libre Baskerville", serif;
+	font-size: 1em;
+	line-height: 1.4em;
+	text-decoration: underline;
+}
+#calvinDesc ul {
+	font-family: "Libre Baskerville", serif;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+#calvinDesc h3 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 1.4em;
+	color: #357d93;
+}
+#calvinDesc h2 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 2.0em;
+	color: #357d93;
+	text-align: center
+}
+#calvinDesc h1 {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1.2em;
+	color: #357d93;
+	text-align: center;
+	line-height: 1.6em;
+}
+.codebox {
+        border:1px solid black;
+        background-color:#F5F5F5;
+        white-space: pre-line;
+        padding:10px;
+        font-size:0.9em;
+        color: black;
+        display: inline-block;
+}
+.codebox code {
+    /* Styles in here affect the text of the codebox */
+    font-size:0.9em;
+    background:transparent;
+    color: black;
+}
+.cdFunc{color:blue;}
+.cdStr{color:red;}
+.cdCom{color:green}
+#alumni h2 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 2.4em;
+	font-weight: bold;
+	text-align: center;
+}
+#alumni h1 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 1.8em;
+}
+#alumni p {
+	font-family: "Libre Baskerville", serif;
+	font-size: 1.1em;
+	padding-left: 3em;
+}
+#name {
+	font-family: "Libre Baskerville", serif;
+	font-size: 1.4em;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	color: #357d93;
+}
+#headShot {
+	padding: 2em 3em 0em;
+}
+#footer p {
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+#footer p a {
+	color: inherit;
+}
+#name a {
+	color: inherit;
+}
+
+

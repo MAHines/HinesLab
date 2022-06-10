@@ -1,0 +1,229 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calvin — Your Online Lab Assistant</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="styles/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="styles/fluid-grid.css" rel="stylesheet" type="text/css">
+<link href="styles/hines_lab.css" rel="stylesheet" type="text/css" media="screen,projection">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="scripts/respond.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="hinesLogo">Hines Lab</div>
+  <div id="menu">
+    <ul>
+      <li style='width: 90px;'><a href="index.html" target="_self">Home</a></li>
+      <li style='width: 100px;'><a href="people.html" target="_self">People</a></li>
+      <li style='width: 160px;'><a href="pubs.html" target="_self">Publications</a></li>
+		<li style='width: 140px;'><a href="software.html">Software</a></li>
+    </ul>
+</div>
+  <div id="imageCarousel">
+      <br>
+  </div>
+  <div id="calvinDesc">
+<h2>Calvin — Your Online Chemistry Lab</h2>
+<h1>A free platform for remote learning of chemistry<br>
+  through
+	inquiry-based experimentation<em>&nbsp;</em></h1>
+   
+<h3>Requirements</h3>
+<p><strong>Instructor:</strong></p>
+<ul>
+  <li>Computer connected to the internet running Mac OS (Windows soon?)</li>
+  <li>A cloud drive, such as Box or Google Drive</li>
+  <li><a href=https://www.wavemetrics.com target="_self">Igor Pro</a> (free demo for one month, coursework license = $125/yr)</li>
+</ul>
+	      
+<p><strong>Students:</strong></p>
+<ul>
+  <li>A computer or tablet connected to the internet</li>
+</ul>
+
+<p><strong>Level:</strong></p>
+<ul>
+  <li>Suitable for college-level general chemistry or AP high school chemistry</li>
+</ul>
+
+<h3><a href="#ancTryCalvin">Try Calvin Now</a></h3>
+
+<p>Calvin was designed to enable students enrolled at Cornell University to perform our standard inquiry-based
+laboratory experiments <em>at home</em> during the Covid-19 pandemic. Calvin is a compact
+interpreted language that simulates student-designed experiments from laboratory data
+collected at Cornell shortly prior to lock down.</p>
+
+<p>Student groups (or individual students) design their experiments for Calvin using
+a text editor. (Syntax coloring is available for a number of popular free editors.)
+Students then e-mail their experiment to a watched folder in the cloud that they cannot
+otherwise access. This maintains confidentiality. Calvin opens the file, simulates
+the experiment, generates a rtf file documenting the outcome and csv files of
+any spectra produced, zips the whole shebang, and uploads the result
+to a different folder that the students can access from an internet browser. At Cornell,
+we have implemented this using Box, because it enables Cornell authentication. Students can
+only access their specific output folder.</p>
+
+<p>Calvin is compatible with other cloud solutions, such as Google Drive; however, some
+may not allow e-mail submission. Students could alternatively drop their experiment
+file in a watched folder.</p>
+
+<h3>A sample Calvin experiment</h3>
+<p>Experiments are described in a simple language that mimics spoken English. For example, the 
+box below shows a simple experiment where Calvin titrates his stock acid solution
+with his stock base solution to make sure everything is working. The syntax coloring is
+generated automatically by the text editor. </p></div>
+ 
+<div class="codebox"><code><span class="cdCom">// Identifying our experiments</span>
+<span class="cdFunc">Set_Group_Name</span>(name:<span class="cdStr"> "Weimaraners"</span>)
+<span class="cdFunc">Set_TA_Name</span>(name:<span class="cdStr"> "Hines"</span>)
+
+<span class="cdCom">// Getting stock solutions</span>
+<span class="cdFunc">Fill_Empty_100ml_Beaker_with_Standardized_Base</span>(newName:<span class="cdStr"> "stock_base"</span>)
+<span class="cdFunc">Fill_Empty_100ml_Beaker_with_Standardized_Acid</span>(newName:<span class="cdStr"> "stock_acid"</span>)
+
+<span class="cdCom">// Making acid solution for titration</span>
+<span class="cdFunc">Make_New_100ml_Beaker</span>(newName:<span class="cdStr"> "titration_beaker"</span>)
+<span class="cdFunc">Transfer_Soln_with_20ml_Pipette</span>(from:<span class="cdStr"> "stock_acid"</span>, to:<span class="cdStr"> "titration_beaker"</span>)
+<span class="cdFunc">Add_One_Drop_of_Indicator</span>(indicator:<span class="cdStr"> "Thymol_blue"</span>, to:<span class="cdStr"> "titration_beaker"</span>)
+
+<span class="cdCom">// Get the buret ready</span>
+<span class="cdFunc">Fill_50ml_Buret</span>(from:<span class="cdStr"> "stock_base"</span>)
+
+<span class="cdCom">// Performing the titration</span>
+<span class="cdFunc">Titrate_Beaker_from_Buret_until_Color_Change</span>(into:<span class="cdStr"> "titration_beaker"</span>)
+
+<span class="cdCom">// Take a visible spectrum</span>
+<span class="cdFunc">Take_Spectrum(</span>of: <span class="cdStr">"titration_beaker"</span>)
+        </code></div>
+
+<div id="calvinDesc">
+<h3>Calvin knows colors and spectra</h3>
+<p>Calvin produces data derived from actual experiments. For example, the output from the simple
+titration above includes the solution color before the titration began, the solution color after
+the endpoint was reached, and the visible spectrum of the final solution, which is also
+saved as a csv file:</p>
+</div>
+<div class="codebox"><code><span class="cdCom">// Performing the titration</span>
+<span class="cdFunc">Titrate_Beaker_from_Buret_until_Color_Change</span>(into: <span class="cdStr">"titration_beaker"</span>)
+The color of the solution in titration_beaker is:
+<img src="images/Calvin/First_color.png" alt="Initial color">
+The volume of solution in the buret is now 49.45 ml.
+Performing titration now.
+The volume of solution in the buret is now 31.75 ml.
+The color of the solution in titration_beaker is:
+<img src="images/Calvin/Second_color.png" alt="Final color"> 
+The color range of the indicator thymol_blue is:
+<img src="images/Calvin/Color_range.png" alt="Color range"> 
+ 
+<span class="cdCom">// Take a visible spectrum</span>
+<span class="cdFunc">Take_Spectrum</span>(of: <span class="cdStr">"titration_beaker"</span>)
+The spectrum of the solution in titration_beaker is:
+<img src="images/Calvin/Spectrum.png" alt="Spectrum">  
+This spectrum has been saved as Spectrum_1.csv
+</code></div>
+<div id="calvinDesc">
+<p>&nbsp;</p>
+<p>All of the data used by Calvin are real
+and were collected in the undergraduate labs at Cornell University shortly before Cornell
+went on lock down. All of the colors and spectra generated by Calvin are calculated from actual spectra of indicators using the CIE 1931 color space.</p>
+
+
+<h3>Calvin likes unknowns</h3>
+<p>Calvin primary mission is to enable our students to perform three inquiry-based experiments:</p>
+<ul>
+  <li>The <em>pK<sub>a</sub></em> of an Unknown Indicator</li>
+  <li>Identity of an Unknown Solid Acid</li>
+  <li>Composition of an Unknown Buffer</li>
+</ul>
+<p>Calvin comes stocked with a wide range of known and unknown indicators, solid acids, and buffers.
+The unknowns can be randomized and/or renamed by changing a .csv file. More 
+unknowns can be easily added.</p>
+
+<h3>Calvin is adaptable</h3>
+<p>Think of Calvin as the chemicals, glassware, and spectrometers in a teaching laboratory. You can use
+these materials to perform a wide range of experiments, from very proscriptive activities to completely
+inquiry-based experiments. Calvin is adaptable to your curriculum.</p>
+
+<h3>Calvin ≠ programming</h3>
+<p>Calvin is not about programming. There is no “if this, then that.” There are no loops. Calvin's commands mimic spoken English.</p>
+<p>Calvin uses a simple, low-bandwidth text interface, because some of my students are in remote locations
+with poor internet access. I have students from Alaska to Africa and everywhere in between!</p>
+
+<h3>Calvin has robust error handling and is safe for your computer</h3>
+<p>Calvin obeys the same laws of chemistry as a real laboratory. “Pure” H<sub>2</sub>O does not have 
+a <em>p</em>H of 7.00 in my lab or in Calvin. Volumes measured by pipette, buret, or graduated cylinder have realistic precisions. Adding
+125 mL of solution to a 100 mL beaker causes a spill just like in the lab.</p>
+
+<p>Calvin does not expose the operating computer to access by bad guys. The computer running Calvin 
+just transfers files back and forth to folders in the cloud. Calvin ignores all commands except chemistry,
+so your computer remains safe. Each experiment takes a few seconds for
+Calvin to complete, so only a single computer is needed for even the largest courses.</p>
+
+<h3>Calvin is free (but requires Igor Pro)</h3>
+<p>Calvin is currently running on Mac OS, but I could get it running on Windows if there is  demand.</p>
+<p>Calvin's output is in English. If there is  demand, I could get it running in other languages with some translation help.</p>
+
+<h3><a name="ancTryCalvin"></a>Learn More About Calvin</h3>
+<p>Everything you need to get Calvin running in your classroom is freely available on <a href="https://github.com/MAHines/Calvin">GitHub</a>. You may want to look through:</p>
+
+<ul>
+  <li><a href="https://github.com/MAHines/Calvin/blob/master/Documentation%20%26%20Expts/Calvin_Student_Guide.pdf">Student Guide to Calvin</a></li>
+  <li><a href="https://github.com/MAHines/Calvin/blob/master/Documentation%20%26%20Expts/Instructor's%20Guide%20to%20Deploying%20Calvin.pdf">Instructors Guide to Deploying Calvin</a></li>
+  <li><a href="https://github.com/MAHines/Calvin/blob/master/Command%20File.calvin">All Calvin Commands</a></li>
+  <li>Instructions for <a href="editors-for-calvin.html" target="_self">syntax coloring</a> (if desired)</li>
+</ul>
+
+<p>We have used Calvin to run four experiments at Cornell. Three of the experiments are inquiry-driven explorations of acid-base chemistry:
+	<em>pK<sub>a</sub></em> of an Unknown Acid-Base Indicator, Identification of an Unknown Solid Acid, and Composition of an Unknown Buffer.
+	The have also used it to measure the equilibrium constant for a simple reaction, Fe<sup>3+</sup> + SCN<sup>–</sup> &rlhar; FeSCN<sup>2+</sup>.
+	The student guides to these experiments are available below.</p>
+
+<ul>
+  <li><a href="https://github.com/MAHines/Calvin/blob/master/Documentation%20%26%20Expts/Three%20Acid-Base%20Experiments.pdf">Three Acid-Base Experiments</a></li>
+  <li><a href="https://github.com/MAHines/Calvin/blob/master/Documentation%20%26%20Expts/Equilibrium_Constants.pdf">Measuring an Equilibrium Constant</a></li>
+</ul>
+
+
+<h3><a name="ancTryCalvin"></a>Try Calvin for yourself</h3>
+<p>If you would like to use Calvin in your (virtual) classroom, everything you need is available for download on <a href="https://github.com/MAHines/Calvin">GitHub</a>. If you use Calvin, please send an e-mail to
+<a href = "mailto:Melissa.Hines@cornell.edu">Melissa.Hines@cornell.edu</a> letting me know your location, your school, and approximately how many students Calvin will impact.&nbsp;</p>
+
+<h3><a name="ancTryCalvin"></a>Support</h3>
+<p>If you have a problem or find a bug, contact me at <a href = "mailto:Melissa.Hines@cornell.edu">Melissa.Hines@cornell.edu</a></p>
+
+<h3>Important Disclaimer</h3>
+<p>I am an advocate of hands-on education. No simulation or computer program can ever replace that.
+When normalcy returns, Calvin will retire.</p>
+
+</div>
+
+<div id="footer"><p><a href="http://chemistry.cornell.edu" target="_self">Department of Chemistry and Chemical Biology</a>, <a href="http://www.cornell.edu" target="_self">Cornell University</a></p>
+<p>&copy; 2020 Melissa A. Hines</p>
+</div>
+</div>
+
+</div>
+</body>
+</html>

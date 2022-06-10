@@ -1,0 +1,88 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Editors for Calvin</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="styles/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="styles/fluid-grid.css" rel="stylesheet" type="text/css">
+<link href="styles/hines_lab.css" rel="stylesheet" type="text/css" media="screen,projection">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="scripts/respond.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="hinesLogo">Hines Lab</div>
+  <div id="menu">
+    <ul>
+      <li style='width: 90px;'><a href="index.html" target="_self">Home</a></li>
+      <li style='width: 100px;'><a href="people.html" target="_self">People</a></li>
+      <li style='width: 160px;'><a href="pubs.html" target="_self">Publications</a></li>
+	  <li style='width: 140px;'><a href="software.html">Software</a></li>
+    </ul>
+</div>
+  <div id="imageCarousel">
+      <br>
+  </div>
+  <div id="calvinDesc">
+<h2>Editors with Syntax Coloring for Calvin</h2>
+<ul>
+  <li><a href="#ancMac">Mac users</a></li>
+  <li><a href="#ancWin">Windows users</a></li>
+  <li><a href="#ancLin">Ubuntu/Linux users</a></li>
+</ul>
+
+<p><a name="ancMac"></a><strong>Mac users:</strong> We suggest you download the free version of BBEdit from the link below.
+Do not purchase a license, as you do not need the extra bells and whistles.</p>
+<p align=center><a href=https://www.barebones.com/products/bbedit/download.html target="_self">
+https://www.barebones.com/products/bbedit/download.html</a></p>
+<p>After downloading and installing BBEdit, go to BBEdit > Folders > Language Modules. 
+This will open a folder in Finder. Put the file <a href="downloads/CalvinLanguageModule.plist" download>CalvinLanguageModule.plist</a> in this folder, 
+then restart BBEdit.</p>
+<p>When writing to Calvin, you can either add a “.calvin” extension to your filename or set 
+the popup menu at the bottom of your editing window to Calvin.</p>
+<p>&nbsp;</p>
+
+<p><a name="ancWin"></a><strong>Windows users:</strong> We suggest you download Sublime Text from the link below.
+It is free for evaluation purposes, but will nag you about purchasing after some period of time.</p> 
+<p align=center><a href=https://www.sublimetext.com/ target="_self">https://www.sublimetext.com/</a></p>
+<p>After downloading and installing Sublime Text, go to Preferences > Browse Packages… which
+will open a folder on your computer. Put the file <a href="downloads/calvin.sublime-syntax" download>calvin.sublime-syntax</a> in the User folder, 
+then restart Sublime Text.</p>
+<p>You can change the color scheme using Preferences > Color Scheme… If you don’t care for 
+the installed color schemes, go to Open Tools > Command Palette… Start typing 
+“Package Control: Install Package.” When that option appears in the palette, click it. 
+Wait for the available packages to show up, and then start typing “Github Color Theme.” 
+When that option appears in the palette, click it to install the theme. Go to Preferences > Color Scheme… 
+to select the scheme.</p>
+<p>When writing to Calvin, add a “.calvin” extension to your filename to enable syntax coloring.</p>
+<p>Sublime Text is also available for Mac and Linux.</p>
+<p>&nbsp;</p>
+
+<p><a name="ancLin"></a><strong>Ubuntu/Linux users:</strong> We suggest you use Gedit, which is the standard GUI 
+text editor on Ubuntu and comes pre-installed with most installations. You can find more information 
+about Gedit as well as installation instructions at the following link:</p>
+<p align=center><a href=https://help.ubuntu.com/community/gedit target="_self">https://help.ubuntu.com/community/gedit</a></p>
+<p>You should then install <a href="downloads/calvin.lang" download>calvin.lang</a> to /usr/share/gtksourceview-3.0/language-specs.</p>
+<p>When writing to Calvin, add a “.calvin” extension to your filename to enable syntax coloring.</p>
+

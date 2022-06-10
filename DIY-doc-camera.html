@@ -1,0 +1,98 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIY Document Camera</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="styles/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="styles/fluid-grid.css" rel="stylesheet" type="text/css">
+<link href="styles/hines_lab.css" rel="stylesheet" type="text/css" media="screen,projection">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="scripts/respond.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="hinesLogo">Hines Lab</div>
+  <div id="menu">
+    <ul>
+      <li style='width: 90px;'><a href="index.html" target="_self">Home</a></li>
+      <li style='width: 100px;'><a href="people.html" target="_self">People</a></li>
+      <li style='width: 160px;'><a href="pubs.html" target="_self">Publications</a></li>
+		<li style='width: 140px;'><a href="software.html">Software</a></li>
+    </ul>
+</div>
+  <div id="imageCarousel">
+      <br>
+  </div>
+  <div id="researchDesc">
+    <h2><center>
+      Do it Yourself Document Camera for At-Home Lectures and Office Hours
+    </center></h2>
+	<p>Use your iPhone or iPad to stream your writing and drawing to your computer.</p>
+
+<p style="text-align:center"><img src="images/doc_camera.jpg" alt="Image of setup"></p>
+
+<p> With so many of us moving to videoconferenced instruction and office hours, I wanted to find a way to use 
+everyday household objects to make a document camera. In the setup pictured above, 
+I filled two empty liter bottles with water and taped a long straight object (here a kebab skewer) 
+to the top. My iPhone was fastened to the end of the boom with some velcro ties, but rubber bands would be even better. 
+The iPhone is running <a href="https://apps.apple.com/us/app/big-screen-ii/id1498789417?ls=1">Big Screen II</a> and 
+streaming the image over wifi to <a href="https://www.airserver.com">AirServer</a> or 
+<a href="https://www.airsquirrels.com/reflector">Reflector 3</a> running on the Mac. As you can see below, 
+an image of the drawing on the paper is being shown on the Mac.</p>
+
+	  <p style="text-align:center"><img src="images/doc_camera2.jpg" alt="Close-up image of setup"></p>
+
+<p>To videoconference with this setup, the Mac would join the videoconference and screen share 
+its desktop. The presenter can then switch between the document camera and other modalities 
+(<em>e.g.,</em> PowerPoint) without changing any screen-sharing settings.</p>
+
+<p>Here is an alternative setup that only requires access to books and an oven. Note the orientation of the books below the rack, which improves stability.</p>
+
+<p style="text-align:center"><img src="images/doc_camera3.jpg" alt="Alt setup image"></p>
+
+<p><a href="https://apps.apple.com/us/app/big-screen-ii/id1498789417?ls=1">Big Screen II</a> is free 
+on the App Store. <a href="https://www.airserver.com">AirServer</a> is available for Mac and Windows 
+for $11.99 (educational users) or $19.99 (other users).&nbsp; <a href="https://www.airsquirrels.com/reflector">
+Reflector 3</a> is available for Mac and Windows for $17.99.  (I have no financial interest in any of these.)</p>
+
+<p>Android users or pre-iOS 13 users could use the camera app built into their cell phone;
+however, the on-screen controls would be displayed. If you find software that avoids this, please 
+<a mailto:Melissa.Hines@cornell.edu>send me an e-mail</a> so that I can share your solution. </p>	  
+
+<p>Windows users: If you have problems getting AirServer to work, 
+<a href="https://support.airserver.com/support/solutions/articles/43000512440-how-can-i-add-an-exception-to-my-firewall-for-airserver-firewall-configuration">
+check your firewall</a>.
+
+<p>Android users: To connect to AirServer, you need to find the “screen cast” option on your phone. This is available in 
+the same pull down menu as wifi, bluetooth, etc. If you do not see it, you need to edit your “visible” options in that menu.
+Once you click on screen cast, the phone will find your laptop to connect to as long as AirServer is running on your computer.
+  </div>
+<div id="footer"><p><a href="http://chemistry.cornell.edu" target="_self">Department of Chemistry and Chemical Biology</a>, <a href="http://www.cornell.edu" target="_self">Cornell University</a></p>
+<p>&copy; 2020 Melissa A. Hines</p>
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Big Screen II for iOS</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="styles/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="styles/fluid-grid.css" rel="stylesheet" type="text/css">
+<link href="styles/hines_lab.css" rel="stylesheet" type="text/css" media="screen,projection">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="scripts/respond.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="hinesLogo">Hines Lab</div>
+  <div id="menu">
+    <ul>
+      <li style='width: 90px;'><a href="index.html" target="_self">Home</a></li>
+      <li style='width: 100px;'><a href="people.html" target="_self">People</a></li>
+      <li style='width: 160px;'><a href="pubs.html" target="_self">Publications</a></li>
+	  <li style='width: 140px;'><a href="software.html">Software</a></li>
+    </ul>
+</div>
+  <div id="imageCarousel">
+      <br>
+  </div>
+  <div id="researchDesc">
+    <h2><center>
+      Big Screen II
+    </center></h2>
+	<p>Big Screen II is an iOS app that transmits, and optionally records, live video from the camera to a second screen connected by AirPlay. The controls are not mirrored to the second screen.</p>
+	  <p><strong><a href="DIY-doc-camera.html">DIY document camera instructions</a></strong> for videoconferencing lectures and office hours from home.</p>
+<ul>
+  	<li>Front or back camera</li>
+  	<li>Landscape or portrait orientation</li>
+  	<li>Records video and audio</li>
+	<li>Supports camera zooming</li>
+	<li>Tap to focus; Double tap to autofocus</li>
+    <li>Adjust exposure by sliding after focus</li>
+	<li>Triple tap suppresses Airplay warning</li>
+	<li>Can use as a document or demo camera</li>
+  	<li>Video recording: 1280 x 720 px with HEVC (if supported) or H.264 compression</li>
+  	<li>Available on the <a href="https://apps.apple.com/us/app/big-screen-ii/id1498789417?ls=1">App Store</a></li>
+</ul>
+    
+<video width="640" height="330" controls autoplay muted>
+  <source src="images/iPhone_App_Preview_480p.mov" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p> Big Screen II is part of a digital whiteboard developed in the Hines Lab in the Dept. of Chemistry and Chemical Biology at Cornell University. The whiteboard is sketched below. The lecturer faces the classroom and writes on a sheet of illuminated glass with a fluorescent pen. The front-facing camera on the iPad behind the glass captures a video of the lecturer and his/her drawings and writing. Because the front camera flips the image horizontally, the lecturer’s writing is not reversed. Unlike a traditional white board, the lecturer cannot obstruct the writing. A full description of the whiteboard is given in E. S. Skibinski, W. J. I. DeBenedetti, A. G. Ortoll-Bloch, and M. A. Hines, “A Blackboard for the 21<sup>st</sup> Century: An Inexpensive Light Board Projection System for Classroom Use,” <em>J. Chem. Educ.</em> <b>92,</b> 1754 (2015).</p>
+<p style="text-align:center"><img src="images/Schematic.png" alt="Schematic" style="max-width:400px;object-fit:cover;"></p>
+<p>Instructions for constructing the digital whiteboard can be <a href="https://pubs.acs.org/doi/suppl/10.1021/acs.jchemed.5b00155/suppl_file/ed5b00155_si_001.pdf">downloaded here</a>.</p>
+	  <p>A big thanks is due to Kirby Turner of White Peak Software, Inc. who wrote the original Big Screen and who graciously shared his source code. Big Screen II is a <em>de novo</em> rewrite of Big Screen with added videorecording capability. All bugs are mine.</p>
+	  <p>Development of the digital whiteboard was supported by the National Science Foundation under Award CHE-1708025.</p>
+	
+<h2>Developed by</h2>
+	<p>© 2020 Melissa A. Hines</p>
+	<p>Please send questions, comments, and bug reports to <a href="mailto:Melissa.Hines@cornell.edu">Melissa.Hines@cornell.edu</a></p>
+
+<h2>Source Code</h2>
+	<p>Available on <a href="https://github.com/MAHines/Big-Screen-II">GitHub</a></p>
+
+	
+	</div>
+<div id="footer"><p><a href="http://chemistry.cornell.edu" target="_self">Department of Chemistry and Chemical Biology</a>, <a href="http://www.cornell.edu" target="_self">Cornell University</a></p>
+<p>&copy; 2020 Melissa A. Hines</p>
+</div>
+</div>
+
+</div>
+</body>
+</html>
