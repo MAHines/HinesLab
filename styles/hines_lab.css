@@ -51,30 +51,31 @@
 
 #researchDesc p {
 	font-family: "Libre Baskerville", serif;
-	font-size: 1em;
-	line-height: 1.4em;
+	font-size: 1.6em;
+	margin-bottom: 1.0em; /* between paragraphs */
+	/*line-height: 1.6em;*/
 }
 #researchDesc a {
-	font-family: "Libre Baskerville", serif;
-	font-size: 1em;
-	line-height: 1.4em;
+	/*font-family: "Libre Baskerville", serif;
+	font-size: 1.2em;
+	line-height: 1.2em;*/
 	text-decoration: underline;
 }
 #researchDesc ul {
 	font-family: "Libre Baskerville", serif;
-	font-size: 1em;
-	line-height: 1.4em;
+	font-size: 1.6em;
+	line-height: 1.6em;
 }
 #researchDesc h2 {
 	font-family: 'Julius Sans One', sans-serif;
-	font-size: 1.7em;
+	font-size: 2.1em;
 	color: #357d93;
 }
 
 #calvinDesc p {
 	font-family: "Libre Baskerville", serif;
-	font-size: 1em;
-	line-height: 1.4em;
+	font-size: 1.6em;
+	margin-bottom: 1.0em; /* between paragraphs */
 }
 #calvinDesc p.head {
 	font-family: 'Julius Sans One', sans-serif;
@@ -84,33 +85,32 @@
 	color: #357d93;
 }
 #calvinDesc a {
-	font-family: "Libre Baskerville", serif;
-	font-size: 1em;
-	line-height: 1.4em;
+	/*font-family: "Libre Baskerville", serif;
+	font-size: 1.8em;
+	line-height: 1.4em;*/
 	text-decoration: underline;
 }
 #calvinDesc ul {
 	font-family: "Libre Baskerville", serif;
-	font-size: 1em;
-	line-height: 1.4em;
+	font-size: 1.8em;
 }
 #calvinDesc h3 {
 	font-family: 'Julius Sans One', sans-serif;
-	font-size: 1.4em;
+	font-size: 1.8em;
 	color: #357d93;
 }
 #calvinDesc h2 {
 	font-family: 'Julius Sans One', sans-serif;
-	font-size: 2.0em;
+	font-size: 2.2em;
 	color: #357d93;
 	text-align: center
 }
 #calvinDesc h1 {
 	font-family: 'Libre Baskerville', serif;
-	font-size: 1.2em;
+	font-size: 1.8em;
 	color: #357d93;
 	text-align: center;
-	line-height: 1.6em;
+/*	line-height: 1.6em;*/
 }
 .codebox {
         border:1px solid black;
@@ -138,16 +138,16 @@
 }
 #alumni h1 {
 	font-family: 'Julius Sans One', sans-serif;
-	font-size: 1.8em;
+	font-size: 2.4em;
 }
 #alumni p {
 	font-family: "Libre Baskerville", serif;
-	font-size: 1.1em;
+	font-size: 1.6em;
 	padding-left: 3em;
 }
 #name {
 	font-family: "Libre Baskerville", serif;
-	font-size: 1.4em;
+	font-size: 2.4em;
 	text-align: center;
 	padding-top: 0.5em;
 	padding-bottom: 1em;
@@ -157,6 +157,7 @@
 	padding: 2em 3em 0em;
 }
 #footer p {
+	font-size: 1.6em;
 	margin-top: 0.3em;
 	margin-bottom: 0.3em;
 }
