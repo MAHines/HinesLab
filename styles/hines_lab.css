@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@import url(//fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
 
 #menu {
     background: #357d93;
@@ -51,9 +51,9 @@
 
 #researchDesc p {
 	font-family: "Libre Baskerville", serif;
-	font-size: 1.6em;
+	font-size: 1.4em;
 	margin-bottom: 1.0em; /* between paragraphs */
-	/*line-height: 1.6em;*/
+	line-height: 1.5em;
 }
 #researchDesc a {
 	/*font-family: "Libre Baskerville", serif;
@@ -74,12 +74,12 @@
 
 #calvinDesc p {
 	font-family: "Libre Baskerville", serif;
-	font-size: 1.6em;
+	font-size: 1.4em;
 	margin-bottom: 1.0em; /* between paragraphs */
 }
 #calvinDesc p.head {
 	font-family: 'Julius Sans One', sans-serif;
-	font-size: 6.0em;
+	font-size: 2.0em;
 	font-weight: bold;
 	line-height: 1.4em;
 	color: #357d93;
@@ -92,22 +92,22 @@
 }
 #calvinDesc ul {
 	font-family: "Libre Baskerville", serif;
-	font-size: 1.8em;
+	font-size: 1.4em;
 }
 #calvinDesc h3 {
 	font-family: 'Julius Sans One', sans-serif;
-	font-size: 1.8em;
+	font-size: 1.4em;
 	color: #357d93;
 }
 #calvinDesc h2 {
 	font-family: 'Julius Sans One', sans-serif;
-	font-size: 2.2em;
+	font-size: 2.0em;
 	color: #357d93;
 	text-align: center
 }
 #calvinDesc h1 {
 	font-family: 'Libre Baskerville', serif;
-	font-size: 1.8em;
+	font-size: 1.4em;
 	color: #357d93;
 	text-align: center;
 /*	line-height: 1.6em;*/
@@ -142,12 +142,12 @@
 }
 #alumni p {
 	font-family: "Libre Baskerville", serif;
-	font-size: 1.6em;
+	font-size: 1.4em;
 	padding-left: 3em;
 }
 #name {
 	font-family: "Libre Baskerville", serif;
-	font-size: 2.4em;
+	font-size: 2.0em;
 	text-align: center;
 	padding-top: 0.5em;
 	padding-bottom: 1em;
@@ -157,7 +157,7 @@
 	padding: 2em 3em 0em;
 }
 #footer p {
-	font-size: 1.6em;
+	font-size: 1.4em;
 	margin-top: 0.3em;
 	margin-bottom: 0.3em;
 }
