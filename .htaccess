@@ -1,5 +1,0 @@
-ErrorDocument 200 "Hello. This is your .htaccess file talking."
-RewriteEngine on
-RewriteCond %{HTTP_HOST} hines\.chem\.cornell\.edu [NC]
-RewriteCond %{REQUEST_URI} ^/$
-RewriteRule ^(.*)$ /HinesLab/$1 [L]
